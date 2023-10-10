@@ -73,6 +73,18 @@ $hotels = [
             <div class="col">
                 <h3> <?= $hotel["distance_to_center"] ?></h3>
             </div>
+            <div class="col">
+
+            <?php if($hotel["parking"] === true) : ?>
+                <h3> Si</h3>
+                <?php else : ?>
+                    <h3> No</h3>
+            <?php endif; ?>
+
+
+            </div>
+          
+
         </div>
 
   
